@@ -192,7 +192,7 @@ public class UsuarioView extends JFrame {
 		objusUarioModel.setEmail(email);
 		objusUarioModel.setSenha(senha);
 		
-		objUsuarioController.salvarUsuario(objusUarioModel); 
+		 
 		
 		TelaPrincipalView princiView = new TelaPrincipalView();
 		
@@ -200,6 +200,7 @@ public class UsuarioView extends JFrame {
 			JOptionPane.showMessageDialog(null, "Campos vazios");
 			
 		}else {
+			objUsuarioController.salvarUsuario(objusUarioModel);
 			princiView.setVisible(true);
 			dispose();
 		}
